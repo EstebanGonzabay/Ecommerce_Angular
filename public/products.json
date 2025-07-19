@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Smart Tv LG 43",
+        "price": 256,
+        "final_price": 250,
+        "discount": 30,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_913792-MEC78181810980_082024-O.webp",
+        "installments": 6,
+        "is_same_price_with_installments": true,
+        "arrives_free": true,
+        "arrives_free_day": "lunes",
+        "id": 1
+    },
+     {
+        "title": "Smart Tv LG 43",
+        "price": 256,
+        "final-price": 250,
+        "discount": 30,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_913792-MEC78181810980_082024-O.webp",
+        "installments": 6,
+        "is_same_price_with_installments": true,
+        "arrives_free": true,
+        "arrives_free_day": "lunes",
+        "id": 2
+    },
+     {
+        "title": "Smart Tv LG 43",
+        "price": 256,
+        "final-price": 250,
+        "discount": 30,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_913792-MEC78181810980_082024-O.webp",
+        "installments": 6,
+        "is_same_price_with_installments": true,
+        "arrives_free": true,
+        "arrives_free_day": "lunes",
+        "id": 3
+    }
+]

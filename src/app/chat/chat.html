@@ -1,0 +1,72 @@
+<h1>Mensajeria de prueba</h1>
+<div>
+
+@if(messages.length === 0){
+    <span class="error-text">Aun no hay mensajes, escribe algo</span>
+}
+<!-- Else -->
+@else {
+    @for(message of messages; track message.id){
+        <div>
+            <h3>{{message.author}} ha dicho:</h3>
+            <p>{{message.text}}</p>
+            <button>Eliminar Mensaje</button>
+            <hr/>
+        </div>
+    }
+}
+</div>
+<!-- 
+
+Nuestro formulario puede tener distintos estados depndiendo de la interaccion del usuario
+Ejemplo:
+-invalid: El formulario no es valido
+-valid: El formulario es valido
+
+
+
+-->
+
+<form (submit)="enviarMensaje()">
+    <div>
+        <label for="author">Ingresar a nombre de quien chatearas:</label>
+        <input 
+            id="author"
+            type="text"
+            required
+            minlength="3"
+            maxlength="12"
+            name="author"
+            [(ngModel)]="form_state.author"
+            #author = 'ngModel'
+        >
+        <!-- 
+        ngModel lo podemos usar al haber improtado al formsModule en nuestro componente chat 
+        [(ngModel)] es una sincronizacion de datos
+        
+        -->
+        <!-- 
+        
+        #autor = 'ngModel' es una referencia al input del aythor del formulario
+        -->
+
+        @if(author.dirty){
+            <span>😊</span>
+        }
+        @if(author.touched){
+            <span>Tengo tu atencion</span>
+        }
+
+    </div>
+    <div>
+        <label for="text">Escribe el mensaje:</label>
+        <textarea 
+            id="text"
+            required
+            minlength="120"
+            name="text"
+            [(ngModel)]="form_state.Text"
+        ></textarea>
+    </div>
+    <button type="submit">Enviar mensaje</button>
+</form>
