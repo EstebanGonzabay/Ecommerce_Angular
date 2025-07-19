@@ -2,7 +2,6 @@ import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductInterface, ProductsService } from '../services/products.service';
 
-
 @Component({
   selector: 'app-product-detail',
   imports: [],
@@ -16,6 +15,7 @@ export class ProductDetail {
   constructor(private route: ActivatedRoute){
     
   }
+  
   ngOnInit(){
     this.route.paramMap.subscribe(
       (params) => {

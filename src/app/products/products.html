@@ -1,35 +1,3 @@
-<!-- <div class="product-list-container">
-    <h1>Productos</h1>
-    @if(loading){
-        <span>Cargando....</span>
-    }
-    @else {
-        <div class="product-list-container__product-list">
-            @for(product of products; track product.id){
-                <a class="product-list-container__product-list" href="product/{{product.id}}">
-                    <div class = "product-list-container__product-list__product-card"> -->
-                        <!-- <img src="{{product.thumbnail}}" alt="{{product.title}}"/>
-                        <h3>{{product.title}}</h3>
-                        <span an class="product-list-container__product-list__product-card__product-original-price">${{product.price}}</span>
-                        <div class="product-list-container__product-list__product-card__product-final-price">
-                            <span>${{product.final_price}}</span><span>{{product.discount}}%OFF</span>
-                        </div>
-                        @if(product.is_same_price_with_installments){
-                            <span>En 6 cuotas ${{product.installments}} sin interes</span>
-                        } -->
-                        <!-- @else {
-                            <span>En 6 cuotas de ${{product.installments}} con interes</span>
-                        }
-                        @if (product.arrives_free) {
-                            <span>Llega gratis el {{product.arrives_free_day}}</span>
-                        } --> 
-                    <!-- </div> -->
-                <!-- </a> -->
-                <!-- }        -->
-        <!-- </div> -->
-<!-- } -->
-<!-- </div> -->
-
 <div class="product-list-container">
     <h1>Productos</h1>
     @if(loading){
@@ -61,3 +29,4 @@
     }
 
 </div>
+    <app-registro-button>Registro</app-registro-button>

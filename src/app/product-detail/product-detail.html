@@ -1,3 +1,61 @@
-@if(product_selected){
-    <h1>{{product_selected.title}}</h1>
+@if (product_selected) {
+  <div class="product-detail">
+    <!-- Header con título y categoría -->
+    <div class="product-header">
+      <span class="product-category">Electrónicos</span>
+      <h1 class="product-title">{{ product_selected.title }}</h1>
+      <div class="rating">
+        ★★★★☆ <span class="rating-count">(128 valoraciones)</span>
+      </div>
+    </div>
+
+    <!-- Precios y descuentos -->
+    <div class="price-section">
+      @if (product_selected.discount > 0) {
+        <div class="price-original">${{ product_selected.price }}</div>
+        <div class="price-final">
+          ${{ product_selected.final_price}}
+          <span class="discount-badge">-{{ product_selected.discount }}% OFF</span>
+        </div>
+      } @else {
+        <div class="price-final">${{ product_selected.final_price}}</div>
+      }
+      
+      <!-- Cuotas -->
+      @if (product_selected.installments > 1) {
+        <div class="installments">
+          <span class="installment-amount">
+            En {{ product_selected.installments }}x ${{ (product_selected.final_price / product_selected.installments).toFixed(2) }}
+          </span>
+          <span class="installment-note">sin interés</span>
+        </div>
+      }
+    </div>
+
+    <!-- Envío -->
+    <div class="shipping-info">
+      @if (product_selected.arrives_free) {
+        <div class="free-shipping">
+          <i class="shipping-icon">🚚</i>
+          <div>
+            <strong>Envío gratis</strong>
+            @if (product_selected.arrives_free_day) {
+              <div class="shipping-day">Llega {{ product_selected.arrives_free_day }}</div>
+            }
+          </div>
+        </div>
+      } @else {
+        <div class="paid-shipping">
+          <i class="shipping-icon">📦</i>
+          <span>Envío con costo</span>
+        </div>
+      }
+    </div>
+
+    <!-- Acciones -->
+    <div class="action-buttons">
+      <button class="buy-button">Comprar ahora</button>
+      <button class="cart-button">Añadir al carrito</button>
+    </div>
+  </div>
 }

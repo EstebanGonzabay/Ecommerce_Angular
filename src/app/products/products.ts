@@ -1,10 +1,12 @@
 import { Component, inject } from '@angular/core';
 // import { Product } from '../product/product';
 import { ProductInterface, ProductsService } from '../services/products.service';
+import { CommonModule } from '@angular/common';
+import { RegistroButton } from '../registro-button/registro-button';
 
 @Component({
   selector: 'app-products',
-  imports: [],
+  imports: [CommonModule, RegistroButton],
   templateUrl: './products.html',
   styleUrl: './products.css'
 })

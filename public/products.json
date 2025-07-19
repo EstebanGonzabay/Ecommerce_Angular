@@ -1,38 +1,74 @@
 [
     {
-        "title": "Smart Tv LG 43",
-        "price": 256,
-        "final_price": 250,
-        "discount": 30,
-        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_913792-MEC78181810980_082024-O.webp",
-        "installments": 6,
+        "title": "Smart TV Samsung 55\" QLED 4K",
+        "price": 799,
+        "final_price": 699,
+        "discount": 100,
+        "thumbnail": "https://comandato.vteximg.com.br/arquivos/ids/236686-1000-1000/1.jpg?v=638858668714900000",
+        "installments": 12,
         "is_same_price_with_installments": true,
         "arrives_free": true,
-        "arrives_free_day": "lunes",
+        "arrives_free_day": "miércoles",
         "id": 1
     },
-     {
-        "title": "Smart Tv LG 43",
-        "price": 256,
-        "final-price": 250,
-        "discount": 30,
-        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_913792-MEC78181810980_082024-O.webp",
-        "installments": 6,
-        "is_same_price_with_installments": true,
+    {
+        "title": "iPhone 15 Pro 256GB",
+        "price": 1099,
+        "final_price": 999,
+        "discount": 100,
+        "thumbnail": "https://www.dxomark.com/wp-content/uploads/medias/post-157596/Apple-iPhone-15-Pro_-natural_featured-image-packshot-review.jpg",
+        "installments": 18,
+        "is_same_price_with_installments": false,
         "arrives_free": true,
-        "arrives_free_day": "lunes",
+        "arrives_free_day": "viernes",
         "id": 2
     },
-     {
-        "title": "Smart Tv LG 43",
-        "price": 256,
-        "final-price": 250,
-        "discount": 30,
-        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_913792-MEC78181810980_082024-O.webp",
+    {
+        "title": "Laptop HP Pavilion 15.6\"",
+        "price": 899,
+        "final_price": 749,
+        "discount": 150,
+        "thumbnail": "https://planetadigitalec.com/cdn/shop/files/c07961287.png?v=1709416774",
         "installments": 6,
         "is_same_price_with_installments": true,
+        "arrives_free": false,
+        "arrives_free_day": "",
+        "id": 3
+    },
+    {
+        "title": "Nintendo Switch OLED",
+        "price": 349,
+        "final_price": 299,
+        "discount": 50,
+        "thumbnail": "https://mobilestore.ec/wp-content/uploads/2021/11/Nintendo-Switch-Oled-Blanco-Mobile-Store-Ecuador.jpg",
+        "installments": 3,
+        "is_same_price_with_installments": false,
         "arrives_free": true,
         "arrives_free_day": "lunes",
-        "id": 3
+        "id": 4
+    },
+    {
+        "title": "Refrigerador Samsung Side by Side",
+        "price": 1599,
+        "final_price": 1299,
+        "discount": 300,
+        "thumbnail": "https://mibodega.ec/80394-large_default/samsung-refrigeradora-476-litros-17pies-con-dispensador-cromada.jpg",
+        "installments": 24,
+        "is_same_price_with_installments": true,
+        "arrives_free": true,
+        "arrives_free_day": "jueves",
+        "id": 5
+    },
+    {
+        "title": "AirPods Pro 2da Generación",
+        "price": 249,
+        "final_price": 199,
+        "discount": 50,
+        "thumbnail": "https://m.media-amazon.com/images/I/51zjb8XYdNL.jpg",
+        "installments": 3,
+        "is_same_price_with_installments": false,
+        "arrives_free": true,
+        "arrives_free_day": "martes",
+        "id": 6
     }
 ]
