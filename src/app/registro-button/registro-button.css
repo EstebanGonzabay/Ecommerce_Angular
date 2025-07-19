@@ -1,3 +1,13 @@
+/* Contenedor del botón - recomendado */
+.registro-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+/* Estilos del botón con centrado */
 .registro-btn {
   /* Estilos base */
   display: inline-flex;
@@ -14,10 +24,15 @@
   position: relative;
   overflow: hidden;
   
+  /* Centrado garantizado */
+  margin: 0 auto;
+  min-width: 200px;
+  
   /* Colores y efectos */
   background: linear-gradient(135deg, #3498db, #2ecc71);
   color: white;
   box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+  text-align: center;
   
   /* Efecto hover */
   &:hover {
@@ -56,6 +71,8 @@
   position: relative;
   z-index: 2;
   letter-spacing: 0.5px;
+  width: 100%;
+  text-align: center;
 }
 
 /* Animación de onda */
@@ -75,5 +92,10 @@
   .registro-btn {
     padding: 10px 20px;
     font-size: 0.9rem;
+    min-width: 180px;
+  }
+  
+  .registro-btn-wrapper {
+    margin: 1.5rem 0;
   }
 }
